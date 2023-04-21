@@ -1,4 +1,3 @@
-import "./styles.css";
 let days = [
   "Sunday",
   "Monday",
@@ -57,13 +56,13 @@ function showWeather(response) {
 
 function searchCity(city) {
   let apiKey = "2d96d64425dca1d6eda00d942a281c0d";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(`${apiUrl}`).then(showWeather);
 }
 
 function holdSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#city-input").value;
+  let city = document.querySelector("#country-input").value;
   searchCity(city);
 }
 
