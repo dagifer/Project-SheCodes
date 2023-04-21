@@ -52,3 +52,9 @@ li {
   margin-bottom: 20px;
   mask-border: 20px;
 }
+
+.open-source {
+  margin: 70px;
+  text-align: center;
+  color: blueviolet;
+}
